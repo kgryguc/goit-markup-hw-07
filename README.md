@@ -1,3 +1,3 @@
-Zadanie domowe studentów #6
+Zadanie domowe studentów #67
 
-https://kgryguc.github.io/goit-markup-hw-06/
+https://kgryguc.github.io/goit-markup-hw-07/
