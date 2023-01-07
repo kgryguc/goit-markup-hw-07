@@ -7,7 +7,7 @@
   --alternative-text-color-white: #fff;
   --alternative-text-color-grey: #757575;
   --alternative-text-color-darkgrey: #212121;
-  --alternative-text-color-black-alfa60: #ffffff99;
+  --alternative-text-color-white-alfa60: #ffffff99;
   --alternative-background-color-lightgrey: #f5f4fa;
   --alternative-background-color-white: #fff;
   --accent-division-line-lightgrey: #ececec;
@@ -78,7 +78,7 @@ body {
   padding-bottom: 94px;
 }
 
-.section-title {
+.section__title {
   font-size: 36px;
   font-weight: 700;
   text-align: center;
@@ -391,30 +391,30 @@ body {
   padding-top: 94px;
 }
 
-.advantages-icons {
+.advantages__icons {
   display: flex;
   gap: 30px;
   padding-bottom: 30px;
 }
 
-.advantages-icon-rectangle {
+.advantages__icon-rectangle {
   background-color: var(--alternative-background-color-lightgrey);
   border-radius: 4px;
   padding: 25px 100px;
 }
 
-.advantages-list {
+.advantages__list {
   display: flex;
   gap: 30px;
 }
 
-.advantages-term {
+.advantages__term {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
-.advantages-description {
+.advantages__description {
   color: var(--alternative-text-color-grey);
   letter-spacing: 0.03em;
   line-height: 1.71em;
@@ -422,18 +422,18 @@ body {
 
 /* WHAT WE DO */
 
-.flex-showcase {
+.showcase {
   display: flex;
   align-items: center;
   gap: 30px;
 }
 
-.showcase-item {
+.showcase__item {
   position: relative;
   font-size: 0;
 }
 
-.showcase-description {
+.showcase__description {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -453,24 +453,24 @@ body {
   background-color: var(--alternative-background-color-lightgrey);
 }
 
-.flex-team {
+.team__list {
   display: flex;
   gap: 30px;
 }
 
-.team-member {
+.team__member {
   flex-basis: calc((100% - 90px) / 3);
 }
 
-.team-card {
+.team__card {
   background-color: var(--alternative-background-color-white);
 }
 
-.team-card > img {
+.team__image {
   display: block;
 }
 
-.team-card > figcaption {
+.team__caption {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -479,24 +479,24 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-person {
+.team__person {
   font-size: 16px;
   font-weight: 500;
   padding-bottom: 10px;
 }
 
-.team-role {
+.team__role {
   color: var(--alternative-text-color-grey);
   font-size: 16px;
   padding-bottom: 16px;
 }
 
-.team-social-links {
+.team__social-links {
   display: flex;
   gap: 10px;
 }
 
-.team-social-link {
+.team__social-link {
   font-size: 0;
   padding: 12px;
   border-radius: 50%;
@@ -507,21 +507,25 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-social-link:hover,
-.team-social-link:focus,
-.team-social-link:active {
+.team__social-link:hover,
+.team__social-link:focus,
+.team__social-link:active {
   background-color: var(--main-brand-color);
   color: var(--alternative-background-color-white);
 }
 
 /* OUR CLIENTS */
 
-.our-clients-list {
+.our-clients {
+  background-color: var(--alternative-background-color-white);
+}
+
+.our-clients__list {
   display: flex;
   justify-content: space-between;
 }
 
-.our-clients-item {
+.our-clients__item {
   font-size: 0;
   padding: 17.71px 32px 14.25px;
   color: var(--icons-default-color);
@@ -532,9 +536,9 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.our-clients-item:hover,
-.our-clients-item:focus,
-.our-clients-item:active {
+.our-clients__item:hover,
+.our-clients__item:focus,
+.our-clients__item:active {
   color: var(--main-brand-color);
 }
 
@@ -545,41 +549,40 @@ body {
   padding: 60px 0;
 }
 
-.footer-flex {
+.footer__wrapper {
   display: flex;
   justify-content: space-between;
 }
 
-.footer-address {
+.footer__address {
   margin-top: 20px;
 }
 
-.footer-contact-item {
+.footer__contact-item {
   font-style: normal;
   margin-bottom: 9px;
 }
 
-.footer-location {
+.footer__contact-item--location {
   color: var(--alternative-text-color-white);
   text-decoration: none;
 }
 
-.footer-mail {
-  color: var(--alternative-text-color-black-alfa60);
+.footer__contact-item--mail {
+  color: var(--alternative-text-color-white-alfa60);
   text-decoration: underline;
 }
 
-.footer-tel {
-  color: var(--alternative-text-color-black-alfa60);
+.footer__contact-item--tel {
+  color: var(--alternative-text-color-white-alfa60);
   text-decoration: none;
 }
 
-.footer-join-us,
-.footer-newsletter {
+.footer__section {
   color: var(--alternative-text-color-white);
 }
 
-.footer-section-title {
+.footer__section-title {
   padding-top: 12px;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -587,12 +590,12 @@ body {
   font-size: 14px;
 }
 
-.footer-social-links {
+.footer__social-links {
   display: flex;
   gap: 10px;
 }
 
-.footer-social-link {
+.footer__social-link {
   font-size: 0;
   padding: 12px;
   border-radius: 50%;
@@ -602,18 +605,18 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-social-link:hover,
-.footer-social-link:focus,
-.footer-social-link:active {
+.footer__social-link:hover,
+.footer__social-link:focus,
+.footer__social-link:active {
   background-color: var(--main-brand-color);
 }
 
-.footer-newsletter-form {
+.footer__newsletter-form {
   display: flex;
   gap: 12px;
 }
 
-.footer-newsletter-form > input[type='email'] {
+.footer__newsletter-input {
   width: 358px;
   height: 50px;
   position: relative;
@@ -623,30 +626,21 @@ body {
   border-radius: 4px;
   padding-left: 16px;
   color: var(--alternative-text-color-black-white);
+  outline: none;
 }
 
-.footer-newsletter-form > input::placeholder {
+.footer__newsletter-input::placeholder {
   position: absolute;
   top: 15px;
   left: 16px;
-  color: var(--alternative-text-color-black-alfa60);
+  color: var(--alternative-text-color-white-alfa60);
 }
 
-.footer-newsletter-form > button {
+.footer__button {
   display: flex;
   align-items: center;
   gap: 24px;
   padding: 10px 28px 10px 42px;
-  cursor: pointer;
-  color: var(--alternative-text-color-white);
-  background-color: var(--main-brand-color);
-  box-shadow: 0px 4px 4px #00000026;
-  border-radius: 4px;
-  border: none;
-  color: var(--alternative-text-color-white);
-  font-weight: 700;
-  line-height: 1.88em;
-  letter-spacing: 0.06em;
 }
 
 /* PORTFOLIO */
