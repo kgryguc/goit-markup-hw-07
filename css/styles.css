@@ -55,7 +55,6 @@ body {
 
 .icon {
   fill: currentColor;
-  display: inline-block;
 }
 
 .list {
@@ -76,18 +75,18 @@ body {
 
 /* HEADER*/
 
-.header-padding-border {
+.header {
   border-bottom: 1px solid var(--accent-division-line-lightgrey);
   padding: 25px 0;
 }
 
-.flex-header {
+.header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.header-logo-nav {
+.nav-bar {
   display: flex;
   align-items: center;
   gap: 93px;
@@ -96,7 +95,6 @@ body {
 .logo,
 .logo:visited,
 .logo:active {
-  color: var(--main-text-color);
   font-family: Raleway, sans-serif;
   font-size: 26px;
   font-weight: 700;
@@ -104,60 +102,56 @@ body {
   text-decoration: none;
 }
 
-.logo-accent {
+.logo--light-bg {
+  color: var(--main-text-color);
+}
+
+.logo--dark-bg {
+  color: var(--alternative-text-color-white);
+}
+
+.logo--accent {
   color: var(--main-brand-color);
 }
 
-.nav-links {
+.nav-bar__links {
   display: flex;
   gap: 46px;
 }
 
-.nav-link {
+.nav-bar__link {
   color: var(--main-text-color);
   font-weight: 500;
   text-decoration: none;
 }
 
-.nav-current {
+.nav-bar__link--current {
   color: var(--main-brand-color);
   position: relative;
 }
 
-.nav-current::after {
+.nav-bar__link--current::after {
   content: '';
   display: block;
   position: absolute;
   width: 100%;
   border-bottom: 4px solid var(--main-brand-color);
   border-radius: 2px;
-  top: 47px;
-  bottom: 0;
+  top: 2.9375rem;
 }
 
-.header-contact {
+.header__contacts {
+  display: flex;
+  gap: 50px;
+}
+
+.header__contact {
+  display: flex;
+  align-items: center;
   color: var(--alternative-text-color-grey);
   font-weight: 500;
   text-decoration: none;
-  text-align: center;
-  display: inline-block;
-  font-size: 0;
-}
-
-.header-contact > .icon {
-  margin-right: 10px;
-}
-
-.header-contact > span {
-  font-size: 16px;
-}
-
-.header-mail {
-  margin-right: 50px;
-}
-
-.header-tel > .icon {
-  vertical-align: top;
+  gap: 10px;
 }
 
 /* MAIN */
@@ -554,10 +548,6 @@ body {
 .footer-flex {
   display: flex;
   justify-content: space-between;
-}
-
-.logo-dark-background {
-  color: var(--alternative-text-color-white);
 }
 
 .footer-address {
