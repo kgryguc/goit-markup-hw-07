@@ -128,9 +128,7 @@ body {
   gap: 93px;
 }
 
-.logo,
-.logo:visited,
-.logo:active {
+.logo {
   font-family: Raleway, sans-serif;
   font-size: 26px;
   font-weight: 700;
@@ -647,7 +645,6 @@ body {
   filter: drop-shadow(0px 4px 4px var(--col-black-alfa15));
   border-radius: 4px;
   padding-left: 16px;
-  color: var(--alternative-text-color-black-white);
   outline: none;
 }
 
